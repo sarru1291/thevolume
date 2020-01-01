@@ -1,12 +1,21 @@
 import React from 'react';
-import Header from './components/header/header';
-import SideBar from './components/sideBar/sideBar';
+import Layout from "./hoc/layout/layout";
+import { Switch, Route } from "react-router-dom";
+import Home from './pages/home/home';
+import Talecity from './pages/talecity/talecity';
 
 function App() {
   return (
     <>
-      <Header></Header>
-      <SideBar></SideBar>
+      <Layout>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/talecity" exact component={Talecity} />
+
+          {/* <Route path="/:type" exact component={ProductList} />
+          <Route path="/:type/:handle" exact component={Product} /> */}
+        </Switch>
+      </Layout>
     </>
   );
 }

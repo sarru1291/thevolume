@@ -1,0 +1,17 @@
+.post-container{
+    display: flex;
+
+    .post-container-title{
+        color: black;
+        width: 5vw;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background-color: #BD9696;
+        h1{
+
+        transform: rotate(270deg);
+        }
+    }
+}
