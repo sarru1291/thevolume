@@ -1,6 +1,40 @@
 section {
   display: flex;
-
-  width: 90vw;
+  width: 75vw;
+  // border: 1px solid red;
   height: 95vh;
+  position: fixed;
+  top: 5vh;
+  .main {
+    position: relative;
+    width: 50vw;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    height: 95vh;
+    overflow-y: scroll;
+  }
 }
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+  // display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #132D54;
+    border-radius: 10px;
+
+}
+
+/* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #555;
+// }

@@ -1,17 +1,10 @@
 .post-container{
-    display: flex;
-
+    width: 100%;
+    position: relative;
+    // border: 1px solid red;
+    // padding-left: 2rem;
     .post-container-title{
         color: black;
-        width: 5vw;
-        text-align: center;
-        justify-content: center;
-        display: flex;
-        align-items: center;
-        background-color: #BD9696;
-        h1{
-
-        transform: rotate(270deg);
-        }
+        font-size: 1.5rem;
     }
 }

@@ -4,10 +4,10 @@ import { NavLink } from "react-router-dom";
 
 export default function sideBar() {
   return (
-    <aside className="sidebar">
+    <aside>
       <div>
         <NavLink to="/" exact activeClassName="navitem-a" className="navitem">
-          HOME
+          Home
         </NavLink>
       </div>
       <div>
@@ -17,10 +17,10 @@ export default function sideBar() {
           activeClassName="navitem-a"
           className="navitem"
         >
-          TALE CITY
+          Tale City
         </NavLink>
       </div>
-      <div className="footer">copyright 2019</div>
+      {/* <div className="footer">copyright 2019</div> */}
     </aside>
   );
 }
