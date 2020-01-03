@@ -1,13 +1,12 @@
-import React from 'react'
-import PostContainer from '../../containers/postContainer/postContainer';
-import './home.scss';
+import React from "react";
+import PostPreviewContainer from "../../containers/postPreviewContainer/postPreviewContainer";
+import "./home.scss";
 export default function Home() {
-    return (
-      <div class="home-container">
-        <PostContainer title="Latest"></PostContainer>
-        <PostContainer title="Tale City"></PostContainer>
-
-        <PostContainer title="Tale City"></PostContainer>
-      </div>
-    );
+  return (
+    <div class="home-container">
+      <PostPreviewContainer title="Latest"></PostPreviewContainer>
+      <PostPreviewContainer title="Tale City"></PostPreviewContainer>
+      <PostPreviewContainer title="Tale City"></PostPreviewContainer>
+    </div>
+  );
 }

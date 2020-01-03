@@ -33,3 +33,12 @@ export async function getPostBySlug(slug) {
       console.error(err);
     });
 }
+export async function getPostById(id) {
+  return await api.posts
+    .read({
+      id
+    })
+    .catch(err => {
+      console.error(err);
+    });
+}
