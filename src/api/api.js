@@ -36,7 +36,8 @@ export async function getPostBySlug(slug) {
 export async function getPostById(id) {
   return await api.posts
     .read({
-      id
+      id,
+      include:"tags,authors"
     })
     .catch(err => {
       console.error(err);

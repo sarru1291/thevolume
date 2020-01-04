@@ -1,9 +1,10 @@
 import React from 'react'
-
-export default function Talecity() {
+import PostPreviewContainer from "../../containers/postPreviewContainer/postPreviewContainer";
+import "./taleCity.scss";
+export default function TaleCity() {
     return (
-        <div>
-            talecity
+        <div className="tale-city-container">
+            <PostPreviewContainer title="Tale City"></PostPreviewContainer>
         </div>
     )
 }

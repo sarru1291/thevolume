@@ -1,23 +1,25 @@
 section {
   display: flex;
-  width: 75vw;
+  width: 100vw;
   // border: 1px solid red;
   height: 95vh;
   position: fixed;
   top: 5vh;
+
+  // overflow-y: scroll;
+  // overflow-x: hidden;
   .main {
     position: relative;
-    width: 50vw;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    width: 100vw;
     height: 95vh;
-    overflow-y: scroll;
+    // margin-left: 3rem;
     overflow-x: hidden;
+    overflow-y: scroll;
   }
 }
 /* width */
 ::-webkit-scrollbar {
-  width: 2px;
+  width: 5px;
   // display: none;
 }
 
@@ -30,9 +32,8 @@ section {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #132D54;
-    border-radius: 10px;
-
+  background: #132d54;
+  border-radius: 10px;
 }
 
 /* Handle on hover */

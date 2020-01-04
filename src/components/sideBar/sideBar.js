@@ -7,7 +7,7 @@ export default function sideBar() {
     <aside>
       <div>
         <NavLink to="/" exact activeClassName="navitem-a" className="navitem">
-          Home
+          <i class="fas fa-home"></i> &nbsp;&nbsp;&nbsp;&nbsp;Home
         </NavLink>
       </div>
       <div>
@@ -17,7 +17,7 @@ export default function sideBar() {
           activeClassName="navitem-a"
           className="navitem"
         >
-          Tale City
+          <i class="fas fa-city"></i> &nbsp;&nbsp;&nbsp;&nbsp;Tale City
         </NavLink>
       </div>
       {/* <div className="footer">copyright 2019</div> */}

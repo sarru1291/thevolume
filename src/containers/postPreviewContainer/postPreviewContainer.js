@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./postPreviewContainer.scss";
-import PostPreview from "../../components/postPreview/postPreview";
+import PostPreview from "./postPreview/postPreview";
 import { getPosts } from "../../api/api";
 export default class PostPreviewContainer extends Component {
   state = {
