@@ -1,13 +1,15 @@
 .post-container {
-  width: 50vw;
-  position: relative;
-  // margin-left: 10%;
-  border-left: 2px solid #ececec;
-  border-right: 2px solid #ececec;
+   width: 50%;
+  position: absolute;
+  //   padding: 1.2rem;
+  left: 25%;
+  right: 25%;
+  // border-left: 2px solid #e9e7e7;
+  // border-right: 2px solid #e9e7e7;
+  // border: 1px solid red;
   padding-left: 1.2rem;
   padding-right: 1.2rem;
-  // background-color: #f9f9f9;
-  // border: 1px solid red;
+  background-color: white;
   .post-info {
     .post-title {
       font-size: 3rem;

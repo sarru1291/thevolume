@@ -1,12 +1,13 @@
 .tale-city-container {
-  width: 50vw;
-  position: relative;
+  width: 50%;
+  position: absolute;
   //   padding: 1.2rem;
-  // margin-left: 10%;
-  border-left: 2px solid #e9e7e7;
-  border-right: 2px solid #e9e7e7;
+  left: 25%;
+  right: 25%;
+  // border-left: 2px solid #e9e7e7;
+  // border-right: 2px solid #e9e7e7;
+  // border: 1px solid red;
   padding-left: 1.2rem;
   padding-right: 1.2rem;
-  // border: 1px solid red;
-  // background-color: #f9f9f9;
+  background-color: white;
 }
