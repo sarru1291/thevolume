@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { getPostById } from "../../api/api";
 import "./postContainer.scss";
+import Spinner from '../../components/spinner/spinner';
 export default class PostContainer extends Component {
   constructor(props) {
     super(props);
@@ -16,7 +17,8 @@ export default class PostContainer extends Component {
         year: "numeric",
         month: "short"
       },
-      pub_time: ""
+      pub_time: "",
+      isLoaded:false
     };
   }
   componentDidMount() {
@@ -24,7 +26,7 @@ export default class PostContainer extends Component {
       .then(post => {
         let pub_time = new Date(post.published_at);
         pub_time = pub_time.toLocaleTimeString("en-US", this.state.options);
-        this.setState({ post, pub_time });
+        this.setState({ post, pub_time,isLoaded:true });
         console.log(this.state.post.authors[0].name);
       })
       .catch(err => {
@@ -35,8 +37,15 @@ export default class PostContainer extends Component {
     //    this.post_content_ref.current.innerHTML = post.html;
   }
   render() {
+    var spinner;
+    if (this.state.isLoaded) {
+      spinner = null;
+    } else {
+      spinner = (<Spinner></Spinner>);
+    }
     return (
       <div className="post-container">
+        {spinner}
         <div className="post-info">
           <h1 className="post-title">{this.state.post.title}</h1>
           <p className="excerpt">
