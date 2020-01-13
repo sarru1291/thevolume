@@ -1,0 +1,27 @@
+@import "../../assets/variables.scss";
+
+.load-more {
+  display: block;
+  width: 100%;
+  height: 2.4rem;
+  margin-bottom: 20px;
+  button {
+    width: 100%;
+    height: 100%;
+    font-size: 1.4rem;
+    background-color: $primaryColor;
+    border: 1px solid $primaryColor;
+    border-radius: 5px;
+    color: $secondaryColor;
+    text-align: center;
+  }
+  button:hover{
+      color: $primaryColor;
+      background-color: $secondaryColor;
+      cursor: pointer;
+  }
+   button:active{
+      color: $secondaryColor;
+      background-color: $primaryColor;
+  }
+}

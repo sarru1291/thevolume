@@ -1,3 +1,14 @@
 {
-    "page_titles":["tale-city","review","technology"]
+  "page_titles": [
+    "home",
+    "tale-city",
+    "indology",
+    "indias-stand",
+    "discover-technology",
+    "monetary-report",
+    "nature-scan",
+    "world-window",
+    "book-review",
+    "report-study"
+  ]
 }

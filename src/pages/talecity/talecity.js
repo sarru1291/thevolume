@@ -4,7 +4,7 @@ import "./taleCity.scss";
 export default function TaleCity() {
     return (
         <div className="tale-city-container">
-            <PostPreviewContainer title="Tale City"></PostPreviewContainer>
+            <PostPreviewContainer title="Tale City" tag="tale-city"></PostPreviewContainer>
         </div>
     )
 }

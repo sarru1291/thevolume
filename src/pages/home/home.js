@@ -4,7 +4,7 @@ import "./home.scss";
 export default function Home() {
   return (
     <div class="home-container">
-      <PostPreviewContainer title="Latest"></PostPreviewContainer>
+      <PostPreviewContainer title="Home" tag="home"></PostPreviewContainer>
     </div>
   );
 }
