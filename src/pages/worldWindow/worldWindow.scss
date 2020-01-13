@@ -11,3 +11,12 @@
   padding-right: 1.2rem;
   background-color: white;
 }
+@media screen and (max-width: 992px) {
+  .world-window-container {
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

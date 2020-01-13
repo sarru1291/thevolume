@@ -23,4 +23,25 @@
     //     display: inline;
     //     height: 5vh;
     // }
+    .hamburger{
+        // display: none;
+        color: white;
+        float: left;
+        width: 10%;
+        // border: 1px solid red;
+        height: 5vh;
+        padding: 0.4rem 0;
+         cursor: pointer;
+        i{
+           font-size: 1.7rem;
+        }
+    }
+    .hamburger:hover{
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 992px) {
+  .hamburger{
+    display: inline-block;
+  }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { getPostById } from "../../api/api";
 import "./postContainer.scss";
-import Spinner from '../../components/spinner/spinner';
+import Spinner from "../../components/spinner/spinner";
 export default class PostContainer extends Component {
   constructor(props) {
     super(props);
@@ -18,7 +18,7 @@ export default class PostContainer extends Component {
         month: "short"
       },
       pub_time: "",
-      isLoaded:false
+      isLoaded: false
     };
   }
   componentDidMount() {
@@ -26,7 +26,7 @@ export default class PostContainer extends Component {
       .then(post => {
         let pub_time = new Date(post.published_at);
         pub_time = pub_time.toLocaleTimeString("en-US", this.state.options);
-        this.setState({ post, pub_time,isLoaded:true });
+        this.setState({ post, pub_time, isLoaded: true });
         console.log(this.state.post.authors[0].name);
       })
       .catch(err => {
@@ -41,7 +41,7 @@ export default class PostContainer extends Component {
     if (this.state.isLoaded) {
       spinner = null;
     } else {
-      spinner = (<Spinner></Spinner>);
+      spinner = <Spinner></Spinner>;
     }
     return (
       <div className="post-container">
@@ -57,18 +57,18 @@ export default class PostContainer extends Component {
               className="author-img"
             ></img>
             {this.state.post.authors[0].name} */}
-                    <i class="fa fa-user">&nbsp;Sarvottam Kumar</i>
+            <i class="fa fa-user">&nbsp;Sarvottam Kumar</i>
           </p>
           <p className="time">
-                    <p><i class="fas fa-clock"></i>&nbsp;{this.state.post.reading_time}
-                        min &nbsp;&nbsp;&nbsp;&nbsp; {this.state.pub_time}
-              
+            <p>
+              <i class="fas fa-clock"></i>&nbsp;{this.state.post.reading_time}
+              min &nbsp;&nbsp;&nbsp;&nbsp; {this.state.pub_time}
             </p>
           </p>
         </div>
         <div className="post-content">
-                <p dangerouslySetInnerHTML={{ __html: this.state.post.html }} />
-                <hr/>
+          <p dangerouslySetInnerHTML={{ __html: this.state.post.html }} />
+          <hr />
         </div>
       </div>
     );
