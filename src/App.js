@@ -12,7 +12,7 @@ import MonetaryReport from "./pages/monetaryReport/monetaryReport";
 import WorldWindow from "./pages/worldWindow/worldWindow";
 import NatureScan from "./pages/natureScan/natureScan";
 import DiscoverTechnology from "./pages/discoverTechnology/discoverTechnology";
-
+import ProgrammeArchive from './pages/programmeArchive/programmeArchive';
 function App() {
   return (
     <>
@@ -23,6 +23,7 @@ function App() {
           <Route path="/tale-city" exact component={TaleCity} />
           <Route path="/book-review" exact component={BookReview} />
           <Route path="/indias-stand" exact component={IndiasStand} />
+          <Route path="/programme-archive" exact component={ProgrammeArchive} />
           <Route path="/indology" exact component={Indology} />
           <Route path="/monetary-report" exact component={MonetaryReport} />
           <Route path="/world-window" exact component={WorldWindow} />

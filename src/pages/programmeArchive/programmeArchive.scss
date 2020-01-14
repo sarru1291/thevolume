@@ -1,0 +1,22 @@
+.programme-archive-container {
+  width: 50%;
+  position: absolute;
+  //   padding: 1.2rem;
+  left: 25%;
+  right: 25%;
+  // border-left: 2px solid #e9e7e7;
+  // border-right: 2px solid #e9e7e7;
+  // border: 1px solid red;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  background-color: white;
+}
+@media screen and (max-width: 992px) {
+  .programme-archive-container {
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

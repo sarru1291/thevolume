@@ -56,6 +56,7 @@ export default class PostPreviewContainer extends Component {
     postLoad = postLoad + 5;
     this.setState({ postUnloaded, postLoad });
   };
+  
   render() {
     var spinner;
     var posts;

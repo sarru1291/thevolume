@@ -63,6 +63,20 @@ export default function sideBar() {
 
       <div>
         <NavLink
+          to="/programme-archive"
+          exact
+          activeClassName="navitem-a"
+          className="navitem"
+        >
+          <div>
+            <i class="fas fa-file-archive"></i>
+          </div>
+          <div>Programme Archive</div>
+        </NavLink>
+      </div>
+
+      <div>
+        <NavLink
           to="/discover-technology"
           exact
           activeClassName="navitem-a"
