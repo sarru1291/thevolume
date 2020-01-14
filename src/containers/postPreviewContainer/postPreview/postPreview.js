@@ -28,7 +28,7 @@ export default function PostPreview(props) {
   }
   const link = "/" + page_slug + "/" + props.id;
   return (
-    <NavLink to={link} exact style={{ textDecoration: "none" }}>
+    <NavLink to={link} exact style={{ textDecoration: "none" }} target="_blank">
       <article>
         <img src={props.feature_image}></img>
         <div>

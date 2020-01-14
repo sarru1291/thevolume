@@ -43,6 +43,8 @@ export default class PostContainer extends Component {
     } else {
       spinner = <Spinner></Spinner>;
     }
+    console.log(this.state.post);
+    
     return (
       <div className="post-container">
         {spinner}
@@ -67,6 +69,7 @@ export default class PostContainer extends Component {
           </p>
         </div>
         <div className="post-content">
+          <img src={this.state.post.feature_image} alt=""/>
           <p dangerouslySetInnerHTML={{ __html: this.state.post.html }} />
           <hr />
         </div>

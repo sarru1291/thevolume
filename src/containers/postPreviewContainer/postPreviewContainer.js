@@ -18,7 +18,7 @@ export default class PostPreviewContainer extends Component {
     let tag = this.props.tag;
     // let posts = await getPostsByLimit(5);
     let posts = await getPosts();
-    console.log(posts);
+    // console.log(posts);
     const page_titles = setting_data.page_titles;
     // let page_slug = null;
     let filtered_posts = [];
@@ -56,7 +56,17 @@ export default class PostPreviewContainer extends Component {
     postLoad = postLoad + 5;
     this.setState({ postUnloaded, postLoad });
   };
-  
+  shouldComponentUpdate(nextProp, nextState) {
+    console.log("should component update");
+    
+    console.log(nextProp);
+    console.log(nextState);
+    // if (nextProp) {
+      
+    // }
+    return true;
+    
+  }
   render() {
     var spinner;
     var posts;

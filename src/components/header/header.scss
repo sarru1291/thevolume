@@ -1,47 +1,52 @@
 @import "../../assets/variables.scss";
-.header{
-    width: 100%;
-    height: 5%;
-    background-color: $primaryColor;
-    color: white;
-    text-align: center;
-    font-size: 1rem;
-    position: absolute;
-    border-bottom: 1px solid black;
-    top: 0;
-        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+.header {
+  width: 100%;
+  height: 5%;
+  background-color: $primaryColor;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  position: absolute;
+  border-bottom: 1px solid black;
+  top: 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 
-    h1{
-        margin: 0px;
-        height: 5vh;
-        border-bottom: 1px solid black;
-        span{
-            font-style: italic;
-        }
+  h1 {
+    margin: 0px;
+    height: 5vh;
+    border-bottom: 1px solid black;
+    span {
+      font-style: italic;
     }
-    // img{
-    //     display: inline;
-    //     height: 5vh;
-    // }
-    .hamburger{
-        // display: none;
-        color: white;
-        float: left;
-        width: 10%;
-        // border: 1px solid red;
-        height: 5vh;
-        padding: 0.4rem 0;
-         cursor: pointer;
-        i{
-           font-size: 1.7rem;
-        }
+  }
+  // img{
+  //     display: inline;
+  //     height: 5vh;
+  // }
+  .hamburger {
+    // display: none;
+    color: white;
+    float: left;
+    width: 10%;
+    // border: 1px solid red;
+    height: 5vh;
+    padding: 0.4rem 0;
+    cursor: pointer;
+    i {
+      font-size: 1.5rem;
     }
-    .hamburger:hover{
-        cursor: pointer;
-    }
+  }
+  .hamburger:hover {
+    cursor: pointer;
+  }
 }
 @media screen and (max-width: 992px) {
   .hamburger{
     display: inline-block;
+  }
+}
+@media screen and (min-width: 993px) {
+  .hamburger{
+    display: none;
   }
 }
