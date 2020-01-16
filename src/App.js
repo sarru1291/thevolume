@@ -35,7 +35,7 @@ function App() {
           />
           <Route path="/report-study" exact component={ReportStudy} />
 
-          <Route path="/:page/:id" exact component={PostContainer} />
+          <Route path="/:page/:slug" exact component={PostContainer} />
         </Switch>
       </Layout>
     </>

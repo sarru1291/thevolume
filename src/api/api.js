@@ -53,7 +53,7 @@ export async function getPosts() {
   return await api.posts
     .browse({
       limit: "all",
-    include: "tags,authors"
+      include: "tags,authors"
     })
     .catch(err => {
       console.error(err);
@@ -81,7 +81,8 @@ export async function getPostsByLimit(limit) {
 export async function getPostBySlug(slug) {
   return await api.posts
     .read({
-      slug
+      slug,
+      include: "tags,authors"
     })
     .catch(err => {
       console.error(err);
@@ -91,7 +92,7 @@ export async function getPostById(id) {
   return await api.posts
     .read({
       id,
-      include:"tags,authors"
+      include: "tags,authors"
     })
     .catch(err => {
       console.error(err);

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { getPostById } from "../../api/api";
+import { getPostBySlug } from "../../api/api";
 import "./postContainer.scss";
 import Spinner from "../../components/spinner/spinner";
 export default class PostContainer extends Component {
@@ -22,7 +22,7 @@ export default class PostContainer extends Component {
     };
   }
   componentDidMount() {
-    getPostById(this.props.match.params.id)
+    getPostBySlug(this.props.match.params.slug)
       .then(post => {
         let pub_time = new Date(post.published_at);
         pub_time = pub_time.toLocaleTimeString("en-US", this.state.options);

@@ -86,7 +86,7 @@ export default class PostPreviewContainer extends Component {
               reading_time={post.reading_time}
               published_at={post.published_at}
               tags={post.tags}
-              id={post.id}
+              slug={post.slug}
             ></PostPreview>
           ));
       }
